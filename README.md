@@ -1,2 +1,2 @@
-# porytafolio
-Practices generated within language learning
+# portafolio
+Practices developed with different programming languages
