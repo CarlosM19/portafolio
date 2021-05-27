@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viwport" content="whidth=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <meta name="description" content="Genera tu Curriculum de forma facil y clara, el cual te permitira conseguir el trabajo deseado" />
+    <meta name= "Author" content="Carlos Méndez" />  
+    <meta name= "keywords" content="Trabajo, Estudios, Laboral, Habilidades, Experiencia, Genera tu CV, curriculum vitae, solicitud de empleo, empleo" />
+    <link rel="stylesheet" href="curriculum.css" />
+    <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon" sizes="32x32"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagenes/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagenes/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagenes/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagenes/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="manifest" href="imagenes/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/cee335b8cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/entrevista-2000x.jpg" alt="Portada de la Web" width="1340px" id="portada" class="portada">
+        <h1 class="titulo">Tus Cursos y Habilidades.</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personales.html">Personales</a></li>
+            <li><a href="academicos.html">Academicos</a></li>
+            <li><a href="cursos.html">Cursos y Habilidades</a></li>
+            <li><a href="laboral.html">Experiencia Laboral</a></li>
+            <li><a href="resumen.html">Resumen </a></li>
+        </ul>
+    </nav>
+    <section>
+        <table name="cursos" id="cursos" class="cursos">
+            <caption><h2>Cursos y Habilidades</h2></caption>
+            <tr>
+                <th>Curso o Habilidad</th>
+                <th>Nombre</th>
+                <th>Institución</th>
+                <th>Año</th>
+                <th>Documento</th>
+            </tr>
+        </table>
+        <form>
+            <fieldset>
+                <legend><h2>Cursos o Habilidades</h2></legend>
+                <p><input type="button" value="Agregar" name="agregar" id="agregar" class="agregar"/></p>
+                <p>
+                    <select name="quees" id="quees" class="quees" required>
+                        <option value="curso">Curso</option>
+                        <option value="Seminario">Seminario</option>
+                        <option value="Taller">Taller</option>
+                        <option value="Habilidad">Habiliadad</option>
+                    </select>&emsp;&emsp;
+                    <label><strong>Nombre:</strong></label>
+                    <input type="text" size="35px" name="nombre" id="nombre" class="nombre" placeholder="Escribe el Nombre del Curso o Habiliadad" required/>&emsp;&emsp;
+                    <label><strong>Institución</strong></label>
+                    <input type="text" size="55px" name="institucion" id="institucion" class="institucion" placeholder="Escribe en donde optuviste el conocimiento o Habilidad" required/>
+
+                 </p>
+
+            </fieldset>
+        </form>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <footer>
+        <div>
+             <p><h4>CONTACTO</h4></p>
+             <p>Desarrollado y Diseñado por:</p>
+             <p><img src="imagenes/ms-icon-150x150.png" class="logo"> </p>
+             <p>email:<a href="mailto:cmendezfin@gmail.com">cmendezfin@gmail.com</a></p>
+             <p>C.Postal 28500, Cuahutemoc, Colima, México</p> 
+             <p><a href="https://www.facebook.com/carlosadrian.lopezmendez" class="button-facebook">
+                <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/carlosadrian.lopezmendez/" class="button-instagram">
+                <i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com" class="button-linkedin">
+                <i class="fab fa-linkedin"></i></a></p>
+             <p><input type="text" name="nombre" size="25" placeholder="Escribe tu Nombre Completo"/></p>
+             <p><input type="email" name="email" id="email" class="email" placeholder="Escribe tu email"/></p>
+             <p><textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea></p>
+             <p><input type="button" value="Enviar" name="enviar" id="enviar" class="enviar"/></p>
+        </div>
+    </footer>
+           
+    <script src="curriculum.js"></script>
+    
+</body>
+</html>

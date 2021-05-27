@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viwport" content="whidth=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <meta name="description" content="Genera tu Curriculum de forma facil y clara, el cual te permitira conseguir el trabajo deseado" />
+    <meta name= "Author" content="Carlos Méndez" />  
+    <meta name= "keywords" content="Trabajo, Estudios, Laboral, Habilidades, Experiencia, Genera tu CV, curriculum vitae, solicitud de empleo, empleo" />
+    <link rel="stylesheet" href="curriculum.css" />
+    <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon" sizes="32x32"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagenes/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagenes/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagenes/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagenes/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="manifest" href="imagenes/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/cee335b8cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/entrevista-2000x.jpg" alt="Portada de la Web" width="1340px" id="portada" class="portada">
+        <h1>Cuentanos que Estudios Tienes.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personales.html">Personales</a></li>
+            <li><a href="academicos.html">Academicos</a></li>
+            <li><a href="cursos.html">Cursos y Habilidades</a></li>
+            <li><a href="laboral.html">Experiencia Laboral</a></li>
+            <li><a href="resumen.html">Resumen </a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+         <table name= academicos id="academicos" class="academicos">
+            <caption><h2>Estudios Académicos</h2></caption>
+            <tr>
+                <th>Institución Académica:</th>&emsp;
+                <th>Grado de Estudios:</th>&emsp;
+                <th>Carera:</th>&emsp;
+                <th>Fecha de Ingreso:</th>&emsp;
+                <th>Fecha de Egreso:</th>&emsp;
+                <th>País:</th>&emsp;
+                <th>Estado o Provincia:</th>&emsp;
+                <th>Situación Académica:</th>&emsp;
+                <th>Documento Obtenido:</th>&emsp;
+            </tr>
+         </table>
+        </div>
+        <form>
+            <div>
+                <fieldset>
+                    <legend><h2>Estudios Cursados</h2></legend>
+                     <input type="button" value="Agregar" name="agregar" id="agregar" class="agregar" />
+                    <p>
+                        <label><strong>Institución Academica:</strong></label>
+                        <input type="text" name="escuela" id="escuela" class="escuela" size="50px" placeholder="Nombre de la Escuela o Academia" required/>&emsp;&emsp;
+                        <label><strong>Fecha de Ingreso:</strong></label>
+                        <input type="date" name="fecha_ingreso" id="fecha_ingreso" class="fecha_ingreso" required/>&emsp;&emsp;
+                        <label><strong>Fecha de Egreso:</strong></label>
+                        <input type="date" name="fecha_egreso" id="fecha_egreso" class="fecha_egreso" required/>
+                    </p>
+                    <p>
+                        <label><strong>Carrera:</strong></label>
+                         <input type="text" name="carrera" id="carrera" class="carrera" size="30" placeholder="Nombre de la Carrera" required/>&emsp;&emsp;
+                        <label><strong>País de Institución:</strong></label>
+                         <input type="text" name="pais_escuela" id="pais_escuela" class="pais_escuela" placeholder="En que país estudiaste" required/>&emsp;&emsp;
+                        <label><strong>Estado o Provincia:</strong></label>
+                         <input type="text" name="estado_escuela" id="estado_escuela" class="estado_escuela" placeholder="Estado o Provincia de la Institución" required>&emsp;&emsp;
+                        <label><strong>Situación Académica:</strong></label>
+                         <select>
+                            <option>Cursando</option>
+                            <option>Egresado</option>
+                            <option>Trunca</option>
+                         </select>
+                    </p>
+                    <p>
+                        <label><strong>Grado de Estudios:</strong></label>
+                         <select required>
+                             <option>Primaria</option>
+                             <option>Secundaria</option>
+                             <option>Preparatoria</option>
+                             <option>Carrera Técnica</option>
+                             <option>Licenciatura</option>
+                             <option>Diplomado</option>
+                             <option>Maestria</option>
+                             <option>Doctorado</option>
+                         </select>&emsp;&emsp;
+                        <label><strong>Documento Obtenido:</strong></label>
+                         <select required>
+                             <option>Certificado de Estudios</option>
+                             <option>Carta Pasante</option>
+                             <option>Título</option>
+                             <option>Diploma</option>
+                             <option>Otro</option>
+                         </select>&emsp;
+                         <label>Otro:</label>
+                          <input type="text" name="otro" id="otro" class="otro" placeholder="Especifica"/>&emsp;&emsp;&emsp;&emsp;
+                    </p>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <footer>
+        <div>
+            <p><h4>CONTACTO</h4></p>
+            <p>Desarrollado y Diseñado por:</p>
+            <p><img src="imagenes/ms-icon-150x150.png" class="logo"> </p>
+            <p>email:<a href="mailto:cmendezfin@gmail.com">cmendezfin@gmail.com</a></p>
+            <p>C.Postal 28500, Cuahutemoc, Colima, México</p> 
+            <p><a href="https://www.facebook.com/carlosadrian.lopezmendez" class="button-facebook">
+               <i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/carlosadrian.lopezmendez/" class="button-instagram">
+               <i class="fab fa-instagram-square"></i></a>
+               <a href="https://www.linkedin.com" class="button-linkedin">
+               <i class="fab fa-linkedin"></i></a></p>
+            <p><input type="text" name="nombre" size="25" placeholder="Escribe tu Nombre Completo"/></p>
+            <p><input type="email" name="email" id="email" class="email" placeholder="Escribe tu email"/></p>
+            <p><textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea></p>
+            <p><input type="button" value="Enviar" name="enviar" id="enviar" class="enviar"/></p>
+       </div>
+    </footer>
+           
+    <script src="curriculum.js"></script>
+</body>
+</html> 

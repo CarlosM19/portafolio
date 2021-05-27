@@ -1,0 +1,48 @@
+.portada{
+max-width: 100%;
+height: auto;
+margin: 0px;
+padding: 0px;
+border: 0px;
+background-origin: padding-box;
+}
+.titulo{
+  text-align: center;
+  text-align: start;
+}
+.menu{
+  text-align: center;
+  text-justify: unset;
+  text-transform: uppercase;
+  align-items: baseline;
+  align-self: start;
+}
+.button-facebook{
+  background: blue;
+  color: white;
+  padding: 08px;
+  border-radius: 50%;
+  line-height: 50%;
+  text-align: center;
+  
+}
+.button-instagram{
+  padding: 08px;
+  background: rgb #3f729b;
+  color: #961f79;
+  font-size: 35px;
+  text-align: center;
+  line-height: 50%;
+}
+.button-linkedin{
+  background: #311689;
+  color: white;
+  padding: 08px;
+  border-radius: 50%;
+  line-height: 50%;
+  text-align: center;
+}
+.logo{
+  padding: 10px;
+  width: 100px;
+}

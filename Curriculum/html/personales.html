@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viwport" content="whidth=device-width, initial-scale=1.0" />
+        <title>Curriculum Vitae</title>
+        <meta name="description" content="Genera tu Curriculum de forma facil y clara, el cual te permitira conseguir el trabajo deseado" />
+        <meta name= "Author" content="Carlos Méndez" />  
+        <meta name= "keywords" content="Trabajo, Estudios, Laboral, Habilidades, Experiencia, Genera tu CV, curriculum vitae, solicitud de empleo, empleo" />
+        <link rel="stylesheet" href="curriculum.css" />
+        <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon" sizes="32x32"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="imagenes/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="imagenes/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="imagenes/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="imagenes/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="imagenes/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="imagenes/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="imagenes/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="imagenes/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+        <link rel="manifest" href="imagenes/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://kit.fontawesome.com/cee335b8cd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+          <img src="imagenes/entrevista-2000x.jpg" alt="Portada de la Web" width="1340px" id="portada" class="portada">
+            <h1>Genera tu Curriculum Vitae</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personales.html">Personales</a></li>
+                <li><a href="academicos.html">Academicos</a></li>
+                <li><a href="cursos.html">Cursos y Habilidades</a></li>
+                <li><a href="laboral.html">Experiencia Laboral</a></li>
+                <li><a href="resumen.html">Resumen </a></li>
+            </ul>
+        </nav>
+        <section>
+            <form>
+             <div>
+                <fieldset>
+                 <legend><h2>Datos Personales</h2></legend> 
+                  <p>
+                    <label><strong>Nombre:</strong></label> 
+                     <input type="text"  name="nombre" id="nombre" class="nombre" size="35" placeholder="Escribe tu nombre completo" required/>&emsp;&emsp;
+                    <label><strong>Edad:</strong></label>
+                     <input type="number" name="edad" id="edad" class="edad" size="2" required/> 
+                    <label><strong>Años</strong></label>&emsp;&emsp;
+                    <label><strong>Genero:</strong></label>
+                     <input type="radio" name="genero" id="genero" class="genero" />Masculino
+                     <input type="radio" name="genero" id="genero" class="genero">Femenino &emsp;
+                    <label><strong>Idioma Nativo:</strong></label>
+                     <input type="text" name="idioma" id="idioma" class="idioma" placeholder="Escribe tu Idioma Nativa" required/>&emsp;
+                  </p>
+                  <p>
+                    <label><strong>CURP:</strong></label>
+                     <input type="alfanumerico" name="curp" id="curp" class="curp" placeholder="Escibe tu CURP" required>&emsp;&emsp;
+                    <label><strong>RFC:</strong></label>
+                     <input type="text"  name="rfc" id="rfc" class="rfc" placeholder="Escribe tu RFC" required>&emsp;&emsp;
+                    <label><strong>IMSS:</strong></label> 
+                     <input type="number"  name="imss" id="imss" class="imss" placeholder="Escribe tu No. de Afiliación">&emsp;&emsp;
+                    <label><strong>INE:</strong></label>
+                     <input type="text" name="ine" id="ine" class="ine" placeholder="Escribe el OCR de tu INE" />&emsp;&emsp;
+                    <label><strong>Pasaporte:</strong></label>
+                     <input type="text" name="pasaporte" id="pasaporte" class="pasaporte" placeholder="Escribe el No. de Pasaporte"/>
+                 </p>
+                 <p>
+                    <label><strong>Fecha de Nacimiento:</strong></label> 
+                     <input type="date"  name="fecha_nacimiento" id="fecha_nacimiento" class="fecha_nacimiento" requiered>&emsp;&emsp;
+                    <label><strong>País de Nacimiento:</strong></label> 
+                     <input type="text"  name="pais_nacimiento" id="pais_nacimiento" class="pais_nacimiento" placeholder="Escribe tu País de Nacimiento" required>&emsp;&emsp;
+                    <label><strong>Estado Civil:</strong></label>
+                     <select required>
+                      <option>Soltero</option> 
+                      <option>Casado</option>
+                      <option>Divorciado</option>
+                      <option>Viudo</option>
+                    </select> 
+                 </P>
+                 <p>
+                   <label><strong>Telefono:</strong></label>
+                    <input type="tel" name="telefono" id="telefono" class="telefono" placeholder="Telefono Fijo"/>&emsp;
+                   <label><strong>Celular:</strong></label>
+                    <input type="tel" name="celular" id="celular" class="celular" placeholder="Telefono Movil" required/>&emsp;
+                   <label><strong>Correo:</strong></label>
+                    <input type="email" name="email" id="email" class="email" placeholder="Escribe tu email" required/>&emsp;
+                   <label><strong>Skype:</strong></label>
+                    <input type="text" name="skype" id="skype" class="skype" size="25" placeholder="Escribe tu dirección de Skype"/>
+                 </p>
+                </fieldset>
+             </div>
+                <br/>
+                <br/>
+             <div>
+                <fieldset>
+                  <legend><h2>Domicilio</h2></legend>
+                   <p>
+                      <label><strong>Calle:</strong></label>
+                       <input type="text"  name="calle" id="calle" class="calle" size="35" placeholder="Escribe la Calle o Avenida" required>&emsp;
+                      <label><strong>Número Ext.:</strong></label>
+                       <input type="number"  name="numero_ext" id="numero_ext" class="numero_ext" required>&emsp;
+                      <label><strong>Número Int.:</strong></label>
+                       <input type="number"  name="numero_int" id="numero_int" class="numero_int">&emsp;
+                      <label><strong>Colonia:</strong></label> 
+                       <input type="text"  name="colonia" id="colonia" class="colonia" placeholder="Escribe Tu Colonia o Población" requiered>
+                   </p>
+                  <p>
+                    <label><strong>Codigo Postal:</strong></label>
+                     <input type="number"  name="zip" id="zip" class="zip" required>&emsp;
+                    <label><strong>Municipio:</strong></label>
+                     <input type="text"  name="municipio" id="municipio" class="municipio" placeholder="Escribe tu Municipio o Alcaldia" required>&emsp;
+                    <label><strong>Estado:</strong></label>
+                     <input type="text"  name="estado" id="estado" class="estado" placeholder="Escribe tu Estado o Provincia" required>&emsp;
+                    <label><strong>País:</strong></label> 
+                    <input type="text"  name="pais" id="pais" class="pais" placeholder="Escribe el País de tu Domicilio">
+                </p>
+                </fieldset>
+             </div>
+                <br/>
+                <br/>
+             <div>
+                <p>
+                  <input type="submit" value="ENVIAR" name="enviar" id="enviar" class="enviar" />&emsp;
+                  <input type="button" value="GUARDAR" name="guardar" id="guardar" class="guardar" />
+                </p>
+             </div>
+            </form>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+            <footer>
+              <div>
+                <p><h4>CONTACTO</h4></p>
+                <p>Desarrollado y Diseñado por:</p>
+                <p><img src="imagenes/ms-icon-150x150.png" class="logo"> </p>
+                <p>email:<a href="mailto:cmendezfin@gmail.com">cmendezfin@gmail.com</a></p>
+                <p>C.Postal 28500, Cuahutemoc, Colima, México</p> 
+                <p><a href="https://www.facebook.com/carlosadrian.lopezmendez" class="button-facebook">
+                   <i class="fab fa-facebook-f"></i></a>
+                   <a href="https://www.instagram.com/carlosadrian.lopezmendez/" class="button-instagram">
+                   <i class="fab fa-instagram-square"></i></a>
+                   <a href="https://www.linkedin.com" class="button-linkedin">
+                   <i class="fab fa-linkedin"></i></a></p> 
+                <p><input type="text" name="nombre" size="25" placeholder="Escribe tu Nombre Completo"/></p>
+                <p><input type="email" name="email" id="email" class="email" placeholder="Escribe tu email"/></p>
+                <p><textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea></p>
+                <p><input type="button" value="Enviar" name="enviar" id="enviar" class="enviar"/></p>
+             </div>
+            </footer>
+            
+      <script src="curriculum.js"></script>
+    </body>
+</html>
