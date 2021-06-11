@@ -1,48 +1,116 @@
-.portada{
-max-width: 100%;
-height: auto;
-margin: 0px;
-padding: 0px;
-border: 0px;
-background-origin: padding-box;
-}
-.titulo{
-  text-align: center;
-  text-align: start;
-}
-.menu{
-  text-align: center;
-  text-justify: unset;
-  text-transform: uppercase;
-  align-items: baseline;
-  align-self: start;
-}
-.button-facebook{
-  background: blue;
+nav {
+  font-family: 'Raleway', sans-serif;
+  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100wh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+  font-weight: 300; }
+
+.menu {
+  display: flex;
+  perspective: 10px;
+  transform: perspective(300px) rotateX(20deg);
+  will-change: perspective;
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d; }
+
+.menu:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg); }
+  .menu:hover .text {
+    opacity: 1; }
+  .menu:hover > div {
+    opacity: 1;
+    transition-delay: 0s; }
+  .menu:hover .explainer {
+    opacity: 0; }
+
+.left, .center, .right, .lefter, .lefter1, .righter1, .righter {
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: all .3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #58d;
+  cursor: pointer;
+  background-blend-mode: color-burn; }
+  .left:hover, .center:hover, .right:hover, .lefter:hover, .lefter1:hover, .righter1:hover, .righter:hover {
+    box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+    background-color: #ccf; }
+
+.text {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease;
+  bottom: 0;
+  left: 5px;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6); }
+
+a:any-link {
+  text-decoration: none;
+  color: white; }
+
+.explainer {
+  font-weight: 300;
+  font-size: 2rem;
   color: white;
-  padding: 08px;
-  border-radius: 50%;
-  line-height: 50%;
-  text-align: center;
-  
-}
-.button-instagram{
-  padding: 08px;
-  background: rgb #3f729b;
-  color: #961f79;
-  font-size: 35px;
-  text-align: center;
-  line-height: 50%;
-}
-.button-linkedin{
-  background: #311689;
-  color: white;
-  padding: 08px;
-  border-radius: 50%;
-  line-height: 50%;
-  text-align: center;
-}
-.logo{
-  padding: 10px;
-  width: 100px;
-}
+  transition: all .5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(circle at center top, #cce, #33a);
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lefter {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+  background-image: url(../imagenes/menu_inicio.png); }
+
+.lefter1 {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+  background-image: url(../imagenes/menu_personales.png); }
+
+.left {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+  background-image: url(../imagenes/menu_academicos.png); }
+
+.center {
+  opacity: 1;
+  background-image: url(../imagenes/menu_cursos.png); }
+
+.right {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+  background-image: url(../imagenes/menu_laborales.png); }
+
+.righter1 {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+  background-image: url(../imagenes/menu_documentos.png); }
+
+.righter {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+  background-image: url(../imagenes/menu_resumen.png); }
+
+/*# sourceMappingURL=curriculum.css.map */

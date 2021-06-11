@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adivina el #</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../adivina_numero/style.css">
+        <script src="../adivina_numero/practica.js" async defer></script>
+    </head>
+    <body>
+     <header>
+         <h1 class='titulo'>Adivina el Número!</h1>
+     </header>
+     <hr/>
+     <br/><br/><br/><br/>
+     <section>
+         <div class='cabeza'>
+            <h3 class='estado'>Estado:</h3>
+            <p class='situacion' id='situacion'>¡Estamos Adivinando!</p>
+         </div>
+         <br/><br/><br/><br/><br/>
+         <div>
+            <p class='instrucciones'>Instrucciones: Ingresa un número entero, al asar y selecciona el botón de validar, si el número que ingresaste no es el correcto,
+               te aparecerá un mensaje donde te diga que el número es más alto o más bajo, según la condicionante. Sigue intentando hasta 
+               que logres adivinar el número escondido.
+            </p>
+            <br/><br/><br/><br/>
+             <form id='formulario'>
+                 <label class='ingresa' for='numero'>Ingresa un número: </label><input type='text' placeholder='Tu Número' class='numero' id='numero'>
+                 <br/><br/><br/>
+                 <input type='button' value='Validar' class='validar' id='validar'>
+             </form>
+         </div>
+     </section>
+     <br/><br/><br/><br/><br/>
+     <footer>
+         <hr/>
+         <p>Copyright &copy; 2021, Carlos Méndez</p>
+     </footer>
+
+        
+        
+    </body>
+</html>
